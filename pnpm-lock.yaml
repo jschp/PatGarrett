@@ -14,6 +14,9 @@ importers:
       '@0glabs/0g-ts-sdk':
         specifier: 0.2.1
         version: 0.2.1(bufferutil@4.0.8)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+      '@ai16z/adapter-sqlite':
+        specifier: ^0.1.6
+        version: 0.1.6(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.26(openai@4.73.0(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.9)(encoding@0.1.13)(react@18.3.1)(sswr@2.1.0(svelte@5.14.1))(svelte@5.14.1)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)
       '@ai16z/eliza':
         specifier: ^0.1.6
         version: 0.1.6(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.26(openai@4.73.0(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.9)(encoding@0.1.13)(react@18.3.1)(sswr@2.1.0(svelte@5.14.1))(svelte@5.14.1)(vue@3.5.13(typescript@5.6.3))
@@ -29,6 +32,9 @@ importers:
       amqplib:
         specifier: 0.10.5
         version: 0.10.5
+      better-sqlite3:
+        specifier: 11.6.0
+        version: 11.6.0
       csv-parse:
         specifier: 5.6.0
         version: 5.6.0
@@ -1936,6 +1942,11 @@ packages:
     peerDependenciesMeta:
       vue:
         optional: true
+
+  '@ai16z/adapter-sqlite@0.1.6':
+    resolution: {integrity: sha512-dMYwCcnJDMTIFJgdEYsK7mW9Z2EOZwLeNDGMxbsA4fl4Ss5euz6PbsYbmJcJaDVEgKxja1wdgy7TyaCpb3h1cA==}
+    peerDependencies:
+      whatwg-url: 7.1.0
 
   '@ai16z/eliza@0.1.6':
     resolution: {integrity: sha512-3FF9pbNCUTYVRLe1rAcImXMIfmyVQbJTD9BC1Ii88QkdqdWNJ6a7Ab0RTjCgDJwQ/dkrTAbNPu+BK/uqwH7Qwg==}
@@ -19203,6 +19214,36 @@ snapshots:
       vue: 3.5.13(typescript@5.6.3)
     transitivePeerDependencies:
       - zod
+
+  '@ai16z/adapter-sqlite@0.1.6(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.26(openai@4.73.0(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.9)(encoding@0.1.13)(react@18.3.1)(sswr@2.1.0(svelte@5.14.1))(svelte@5.14.1)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)':
+    dependencies:
+      '@ai16z/eliza': 0.1.6(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.26(openai@4.73.0(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.9)(encoding@0.1.13)(react@18.3.1)(sswr@2.1.0(svelte@5.14.1))(svelte@5.14.1)(vue@3.5.13(typescript@5.6.3))
+      '@types/better-sqlite3': 7.6.12
+      better-sqlite3: 11.6.0
+      sqlite-vec: 0.1.6
+      whatwg-url: 14.1.0
+    transitivePeerDependencies:
+      - '@google-cloud/vertexai'
+      - '@langchain/anthropic'
+      - '@langchain/aws'
+      - '@langchain/cohere'
+      - '@langchain/core'
+      - '@langchain/google-genai'
+      - '@langchain/google-vertexai'
+      - '@langchain/groq'
+      - '@langchain/mistralai'
+      - '@langchain/ollama'
+      - axios
+      - cheerio
+      - encoding
+      - peggy
+      - react
+      - solid-js
+      - sswr
+      - supports-color
+      - svelte
+      - typeorm
+      - vue
 
   '@ai16z/eliza@0.1.6(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.26(openai@4.73.0(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.9)(encoding@0.1.13)(react@18.3.1)(sswr@2.1.0(svelte@5.14.1))(svelte@5.14.1)(vue@3.5.13(typescript@5.6.3))':
     dependencies:

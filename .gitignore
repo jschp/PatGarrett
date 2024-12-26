@@ -54,3 +54,9 @@ coverage
 .eslintcache
 
 agent/content
+
+# #ignore to code2prompt
+# docs/
+# packages/
+# client/
+# scripts/
